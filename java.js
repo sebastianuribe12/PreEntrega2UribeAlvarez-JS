@@ -14,20 +14,20 @@ if(Number.isNaN(Regdia) == true){
         Regdia = parseInt(prompt("cuantos dias estaran hospedados"));
     }
 }
-
+let cost;
 let aux; //auxiliar para las habitaciones\
 let NumH;
-
+cost = 40; //valor en usd por habitacion cada dia
 if( NumPer >= 4){
     if(NumPer %4 == 0){
         NumH = NumPer/4;
     }
     else{
         aux = NumPer/4;
-        NumH =
+        NumH = (aux)-((NumPer%4)/4);
     }
 }
     
 
-console.log(`El promedio de las edades de ${NumPer} personas es : ${AcumEd/NumPer}`);
+console.log(`El valor de hospedaje para ${NumPer} personas en ${NumH} Habitaciones  en ${Regdia} dias es : ${(NumH*Regdia)*cost}`);
 alert(`El promedio de las edades de ${NumPer} personas es : ${AcumEd/NumPer}`); 
