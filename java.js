@@ -1,26 +1,16 @@
-alert("Calculador de promedio de edades ✌️\n -----------por Sebastian Uribe Alvarez-----------");
+alert("Simulador Valor Hotel ✌️\n -----------por Sebastian Uribe Alvarez-----------");
 
-let NumPer = parseInt(prompt("cuantas personas registrara"));//numero de personas 
+let NumPer = parseInt(prompt("cuantas personas Se hospedaran \n ( las habitaciones se dividiran en grupos de 4 personas)"));//numero de personas 
 if(Number.isNaN(NumPer) == true){
     while(Number.isNaN(NumPer) == true){
         alert("Porfavor ingrese algun valor Valido");
-        NumPer = parseInt(prompt("cuantas personas registrara"));
+        NumPer = parseInt(prompt("cuantas personas se hospedaran"));
     }
 }
-let RegEd;//Registro de las edades 
-let AcumEd = 0; //acumulador de edades 
+let Regdia;//Registro de dias
 let n;//ciclo
 
-for(n=1; n<=NumPer;n++){
-    RegEd = parseInt(prompt("Ingresar la edad de la persona #"+n));
-    
-    if(Number.isNaN(RegEd) == true){
-        while(Number.isNaN(RegEd) == true){
-            alert("Porfavor ingrese algun valor");
-            RegEd = parseInt(prompt("Ingresar la edad de la persona #"+n));
-            
-        }
-    }
+
     AcumEd = AcumEd+RegEd;
     RegEd = NaN;
     
